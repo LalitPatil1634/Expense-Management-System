@@ -27,6 +27,7 @@ const getAllTransection = async (req, res) => {
   }
 };
 
+
 const deleteTransection = async (req, res) => {
   try {
     await transectionModel.findOneAndDelete({ _id: req.body.transectionId });
